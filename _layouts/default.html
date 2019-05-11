@@ -1,0 +1,66 @@
+{% include header.html %}
+
+<div id="main-content" class="main-content">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+				<article class="post type-post status-publish format-standard hentry">
+
+						<!-- .entry-header -->
+						<header class="entry-header">
+					
+							<div class="entry-meta">
+								<span class="cat-links">
+									{% for c in page.categories %}
+									<a href="{{ c.url }}" rel="category">{{ c }}</a>
+									{% endfor %}
+								</span>
+							</div>
+					
+							<h1 href class="entry-title">{{ page.title}} </h1>
+							
+							<div class="entry-meta">
+								<span class="entry-date">
+									<a href="{{post.url}}" rel="bookmark">
+										<time class="entry-date">
+											{{ page.date | date_to_string }}
+										</time>
+									</a>
+								</span>
+							</div><!-- .entry-meta -->
+							
+							{{ content}}
+
+						</header>
+						
+					<!-- .entry-	
+						<div class="entry-content">
+							{{ post.excrept }}
+						</div>
+						
+					content -->
+					{% if post.tags %}
+						<footer class="entry-meta">
+							<span class="tag-links">		
+								{% for tag in post.tags %}
+									<a href="{{tag.url}}" rel="tag">{{ tag }}</a>
+								{% endfor %}
+							</span>
+						</footer>
+					{% endif %}	
+					</article> <!-- #post-## -->
+
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	{% include sidebar.html %}
+</div><!-- #main-content -->
+
+{% include footer.html %}
+
+<style>
+img{
+	max-width: 100%;
+}
+</style>

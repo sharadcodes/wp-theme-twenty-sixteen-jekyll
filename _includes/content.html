@@ -1,0 +1,41 @@
+<article class="post type-post status-publish format-standard hentry">
+
+	<!-- .entry-header -->
+	<header class="entry-header" onclick="window.location.href='{{post.url}}'" style="cursor: pointer!important;">
+
+		<div class="entry-meta">
+			<span class="cat-links">
+                {% for c in post.categories %}
+                <a href="{{ c.url }}" rel="category">{{ c }}</a>
+                {% endfor %}
+			</span>
+		</div>
+
+		<h1 href class="entry-title">{{ post.title}} </h1>
+
+		<div class="entry-meta">
+			<span class="entry-date">
+				<a href="{{post.url}}" rel="bookmark">
+					<time class="entry-date">
+							{{ post.date | date_to_string }}
+					</time>
+				</a>
+			</span>
+		</div><!-- .entry-meta -->
+
+	</header>
+	
+	<div class="entry-content">
+		{{ post.excerpt |  }}
+	</div>
+
+{% if post.tags %}
+	<footer class="entry-meta">
+		<span class="tag-links">		
+			{% for tag in post.tags %}
+                <a href="{{tag.url}}" rel="tag">{{ tag }}</a>
+            {% endfor %}
+		</span>
+	</footer>
+{% endif %}	
+</article> <!-- #post-## -->

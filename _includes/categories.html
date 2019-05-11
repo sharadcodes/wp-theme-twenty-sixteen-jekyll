@@ -1,0 +1,12 @@
+<aside id="categories-3" class="widget widget_categories">
+{% if page.categories %}	
+	<h1 class="widget-title">Categories</h1>
+	<ul>
+		<li class="cat-item">
+			{% for c in page.categories %}
+			<a href="{{ $baseurl }}/categories/{{ $key | urlize }}/index.html">{{c}}</a>
+			{% endfor %}
+		</li>
+	</ul>
+	{% endif %}
+</aside>

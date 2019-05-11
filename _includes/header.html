@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{{ page.title }} &middot;{{ site.title }}</title>
+    <link href="{{ site.baseurl }}" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
+    <link rel='stylesheet' id='twentyfourteen-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='genericons-css' href='{{ site.baseurl }}/assets/genericons/genericons.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='twentyfourteen-style-css' href='{{ site.baseurl }}/assets/css/style.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax_h.css">
+	<!--[if lt IE 9]>
+	<link rel='stylesheet' id='twentyfourteen-ie-css'  href='/css/ie.css' type='text/css' media='all' />
+	<![endif]-->
+	<script type='text/javascript' src='{{ site.baseurl }}/assets/js/jquery/jquery.js'></script>
+	<script type='text/javascript' src='{{ site.baseurl }}/assets/js/jquery/jquery-migrate.min.js'></script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+
+<body class="home blog masthead-fixed list-view full-width grid">
+<div id="page" class="hfeed site">
+
+	{% if site.logo %}
+		<div id="site-header">
+				<a href="{{ site.baseurl }}/" rel="home">
+					<img src="{{site.baseurl}}/assets/img/{{site.logo}}" width="1260" height="238" alt="{{ site.title }}">
+				</a>
+		</div>
+	{% endif %}
+
+	<header id="masthead" class="site-header" role="banner">
+		
+		<div class="header-main">
+			<h1 class="site-title"><a href="{{ site.baseurl }}/" rel="home">{{ site.title }}</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div class="nav-menu">
+					<ul>
+
+						{% for item in site.toc %}
+					
+						<li class="menu-item menu-item-type-custom menu-item-object-custom">
+							
+							<a href="{{item.url}}" class="customize-unpreviewable">{{ item.title }}</a>
+
+							<ul class="sub-menu">
+								{% for items in item.sub %}
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="{{ items.url }}" class="customize-unpreviewable">{{ items.page }}</a>
+
+								<ul class="sub-menu">
+										{% for itemss in items.subsub %}
+										<li class="menu-item menu-item-type-post_type menu-item-object-post">
+												<a href="{{ itemss.url }}">{{ itemss.page }}</a>
+										</li>
+										{% endfor %}
+								</ul>
+
+								</li>
+								{% endfor %}
+							</ul>
+						</li>						
+						{% endfor %}
+
+					</ul>
+				</div>
+			</nav>
+			
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				
+				{% include searchform.html %}
+				
+			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<!--
+						<li class="page_item"> 
+							<a href="{{ items.url }}">{{ items.title }}</a>
+						</li>
+-->

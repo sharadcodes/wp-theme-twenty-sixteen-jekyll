@@ -1,0 +1,24 @@
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="site-info">
+				<a href="">&copy {{site.title}}</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript' src='{{ site.baseurl }}/assets/js/functions.js'></script>
+	<!-- script pointing to search.js -->
+	<script src="{{ site.baseurl }}/assets/js/search.js"></script>
+	<script>
+	var sjs = SimpleJekyllSearch({
+	searchInput: document.getElementById('in_Default'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '{{ site.baseurl }}/search.json'
+	});
+	</script>
+
+</body>
+</html>
+

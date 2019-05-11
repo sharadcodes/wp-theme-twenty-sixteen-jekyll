@@ -1,0 +1,54 @@
+---
+title: CODING INDIAN
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: _posts
+  values:
+    layout: post
+    author: Sharad Raj
+tagline: A site dedicated to C.S.
+description: A site dedicated to C.S. and Technnology.
+baseurl: ''
+url: https://sharadcodes.github.io
+logo: logo.png
+
+plugins_dir:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jemoji
+
+gems: [jekyll-sitemap,jekyll-feed,jekyll-seo-tag,jemoji]
+
+markdown: kramdown
+author:
+  name: Sharad Raj
+  description: A passionate <strong>developer and student</strong>, learning to be
+    a giant.
+  contact:
+  - title: linkedin
+    url: https://www.linkedin.com/in/srsmaurya
+  - title: github
+    url: https://github.com/sharadcodes
+  - title: twitter
+    url: https://twitter.com/iamsharadraj
+  - title: envelope
+    url: mailto:cwithsharad@gmail.com
+google_analytics_token: ''
+disqus_short_name: cwithsharad
+
+toc:
+- title: HOME
+  url: "/"
+- title: ABOUT
+  url: "/about"
+- title: PRIVACY POLICY
+  url: "/privacy-policy"

@@ -1,0 +1,17 @@
+<div id="secondary">
+
+	{% if site.description %}
+		<h2 class="site-description">{{ site.description }}</h2>
+	{% endif %}
+
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+
+
+		{% include categories.html %}
+
+		{% include recentposts.html %}
+
+
+	</div>
+
+</div><!-- #secondary -->
