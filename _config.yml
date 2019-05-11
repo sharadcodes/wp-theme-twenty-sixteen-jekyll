@@ -51,7 +51,7 @@ toc:
 - title: Categories
   url: "/categories/"
 - title: Projects
-  subfolderitems:
+  sub:
   - page: Bank Management System
     url: https://sharadcodes.github.io/BMS
   - page: TIC-TAC-2 GAME
