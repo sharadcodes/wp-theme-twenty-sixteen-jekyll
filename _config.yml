@@ -48,13 +48,25 @@ disqus_short_name: cwithsharad
 toc:
 - title: HOME
   url: "/"
-- title: ABOUT
-  url: "/about"
-- title: PRIVACY POLICY
-  url: "/privacy-policy"
-- title: Group 3
-  sub:
-    - page: Widget 1
-      url: /widget1.html
-    - page: Widget 2
-      url: /widget2.html
+- title: Categories
+  url: "/categories/"
+- title: Projects
+  subfolderitems:
+  - page: Bank Management System
+    url: https://sharadcodes.github.io/BMS
+  - page: TIC-TAC-2 GAME
+    url: https://sharadcodes.github.io/tictac2/
+  - page: Run-CPP
+    url: https://sharadcodes.github.io/runcpp/    
+  - page: MARKDOWN to JSON API
+    url: https://sharadcodes.github.io/post_api/merged_file.json
+  - page: JSON API based blog
+    url: https://sharadcodes.github.io/api_website/
+  - page: Jekyll Theme Bootblog
+    url: https://sharadcodes.github.io/bootblog/
+  - page: Jekyll Theme Simplifico
+    url: https://sharadcodes.github.io/simpilfico/
+  - page: Coder HTML5 theme
+    url: https://sharadcodes.github.io/coder-theme/index.html
+  - page: FUN-WITH-C
+    url: https://sharadcodes.github.io/funwithc/  
