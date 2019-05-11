@@ -52,3 +52,9 @@ toc:
   url: "/about"
 - title: PRIVACY POLICY
   url: "/privacy-policy"
+- title: Group 3
+  sub:
+    - page: Widget 1
+      url: /widget1.html
+    - page: Widget 2
+      url: /widget2.html
