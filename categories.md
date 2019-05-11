@@ -11,7 +11,7 @@ layout: default
     <div id="#{{ category_name | slugize upcase }}"></div>
     <p></p>
     
-    <h3 class="category-head" style="color:#2b2b2b;">{{ category_name }}</h3>
+    <h3 class="category-head" style="color:#2b2b2b;">{{ category_name | upcase  }}</h3>
     <a name="{{ category_name | slugize upcase }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
