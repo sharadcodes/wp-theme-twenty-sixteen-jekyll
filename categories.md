@@ -15,7 +15,7 @@ layout: default
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h5> :white_small_square:<a href="{{ site.baseurl }}{{ post.url }}">{{post.title | capitalize}}</a></h5>
+      <h5><a href="{{ site.baseurl }}{{ post.url }}">{{post.title | capitalize}}</a></h5>
     </article>
     {% endfor %}
   </div>
