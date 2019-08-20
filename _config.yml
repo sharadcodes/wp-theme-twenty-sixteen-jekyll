@@ -16,7 +16,7 @@ defaults:
     author: Sharad Raj
 tagline: A site dedicated to C.S.
 description: A site dedicated to C.S. and Technnology.
-baseurl: ''
+baseurl: '/wp-theme-twenty-sixteen-jekyll'
 url: https://sharadcodes.github.io/wp-theme-twenty-sixteen-jekyll
 logo: logo.png
 
