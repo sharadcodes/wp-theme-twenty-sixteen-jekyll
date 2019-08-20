@@ -17,7 +17,7 @@ defaults:
 tagline: A site dedicated to C.S.
 description: A site dedicated to C.S. and Technnology.
 baseurl: ''
-url: https://sharadcodes.github.io
+url: https://sharadcodes.github.io/wp-theme-twenty-sixteen-jekyll
 logo: logo.png
 
 plugins_dir:
