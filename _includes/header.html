@@ -47,17 +47,17 @@
 					
 						<li class="menu-item menu-item-type-custom menu-item-object-custom">
 							
-							<a href="{{item.url}}" class="customize-unpreviewable">{{ item.title }}</a>
+							<a href="{{ site.baseurl }}{{item.url}}" class="customize-unpreviewable">{{ item.title }}</a>
 
 							<ul class="sub-menu">
 								{% for items in item.sub %}
 								<li class="menu-item menu-item-type-custom menu-item-object-custom">
-									<a href="{{ items.url }}" class="customize-unpreviewable">{{ items.page }}</a>
+									<a href="{{ site.baseurl }}{{ items.url }}" class="customize-unpreviewable">{{ items.page }}</a>
 
 								<ul class="sub-menu">
 										{% for itemss in items.subsub %}
 										<li class="menu-item menu-item-type-post_type menu-item-object-post">
-												<a href="{{ itemss.url }}">{{ itemss.page }}</a>
+												<a href="{{ site.baseurl }}{{ itemss.url }}">{{ itemss.page }}</a>
 										</li>
 										{% endfor %}
 								</ul>
