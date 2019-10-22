@@ -31,8 +31,7 @@ gems: [jekyll-sitemap,jekyll-feed,jekyll-seo-tag,jemoji]
 markdown: kramdown
 author:
   name: Sharad Raj
-  description: A passionate <strong>developer and student</strong>, learning to be
-    a giant.
+  description: Me any my bio
   contact:
   - title: linkedin
     url: https://www.linkedin.com/in/srsmaurya
@@ -41,7 +40,7 @@ author:
   - title: twitter
     url: https://twitter.com/iamsharadraj
   - title: envelope
-    url: mailto:cwithsharad@gmail.com
+    url: mailto:dev_sharad@outlook.com
 google_analytics_token: ''
 disqus_short_name: cwithsharad
 
@@ -50,23 +49,3 @@ toc:
   url: "/"
 - title: Categories
   url: "/categories/"
-- title: Projects
-  sub:
-  - page: Bank Management System
-    url: https://sharadcodes.github.io/BMS
-  - page: TIC-TAC-2 GAME
-    url: https://sharadcodes.github.io/tictac2/
-  - page: Run-CPP
-    url: https://sharadcodes.github.io/runcpp/    
-  - page: MARKDOWN to JSON API
-    url: https://sharadcodes.github.io/post_api/merged_file.json
-  - page: JSON API based blog
-    url: https://sharadcodes.github.io/api_website/
-  - page: Jekyll Theme Bootblog
-    url: https://sharadcodes.github.io/bootblog/
-  - page: Jekyll Theme Simplifico
-    url: https://sharadcodes.github.io/simpilfico/
-  - page: Coder HTML5 theme
-    url: https://sharadcodes.github.io/coder-theme/index.html
-  - page: FUN-WITH-C
-    url: https://sharadcodes.github.io/funwithc/  
